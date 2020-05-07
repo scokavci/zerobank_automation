@@ -1,0 +1,129 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "user is on login page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 4889366700,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user is on the login page",
+            "match": {
+              "location": "com.zerobank.stepdefinitions.LoginStepDefinition.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 11059945400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user logs in as authorized user",
+            "match": {
+              "location": "com.zerobank.stepdefinitions.LoginStepDefinition.user_logs_in_as_authorized_user()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 457495500,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user logs in Account Activity page",
+            "match": {
+              "location": "com.zerobank.stepdefinitions.FindTransactionStepDefinitions.user_logs_in_Account_Activity_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 94747500,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user access Find Transactions tab",
+            "match": {
+              "location": "com.zerobank.stepdefinitions.FindTransactionStepDefinitions.userAccessFindTransactionsTab()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-05-06T19:32:18.826Z",
+        "line": 28,
+        "name": "Type",
+        "description": "",
+        "id": "find-transactions-in-account-activity;type",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5296429200,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "click \"Deposit\" type",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Deposit\"",
+                  "offset": 6
+                }
+              ],
+              "location": "com.zerobank.stepdefinitions.FindTransactionStepDefinitions.click_type(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2072512600,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "clicks search",
+            "match": {
+              "location": "com.zerobank.stepdefinitions.FindTransactionStepDefinitions.clicks_search()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on WINDOWS (5bed842d37f28ef5737ebfc0824541d3)] -\u003e xpath: (//table//tbody/tr/td[3])[1]] (tried for 25 second(s) with 500 milliseconds interval)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027LAPTOP-E98E5O5G\u0027, ip: \u0027192.168.2.9\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002713.0.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.129, chrome: {chromedriverVersion: 81.0.4044.69 (6813546031a4b..., userDataDir: C:\\Users\\Lenovo\\AppData\\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:55620}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 5bed842d37f28ef5737ebfc0824541d3\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)\r\n\tat com.zerobank.pages.AccountActivityPage.verifyOneResultUnderDeposit(AccountActivityPage.java:133)\r\n\tat com.zerobank.stepdefinitions.FindTransactionStepDefinitions.results_table_should_show_at_least_one_result_under_Deposit(FindTransactionStepDefinitions.java:56)\r\n\tat ✽.results table should show at least one result under Deposit(file:///C:/Users/Lenovo/IdeaProjects/zerobank-automation/src/test/resources/features/FindTransactions.feature:31)\r\n",
+              "duration": 28132470100,
+              "status": "failed"
+            },
+            "line": 31,
+            "name": "results table should show at least one result under Deposit",
+            "match": {
+              "location": "com.zerobank.stepdefinitions.FindTransactionStepDefinitions.results_table_should_show_at_least_one_result_under_Deposit()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@type"
+          }
+        ]
+      }
+    ],
+    "name": "Find Transactions in Account Activity",
+    "description": "",
+    "id": "find-transactions-in-account-activity",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/FindTransactions.feature",
+    "tags": []
+  }
+]
