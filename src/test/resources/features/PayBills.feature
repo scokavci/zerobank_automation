@@ -10,7 +10,7 @@ Feature: Pay Bills
   @successful_payment
   Scenario:Completes a successful pay
     When user completes a Successful Pay operation
-    Then user verify "The payment was successfully submitted" message should be displayed
+    Then user verify "The payment was successfully submitted." message should be displayed
 
   @incomplete_payment
   Scenario: Missing date and amount in payment process

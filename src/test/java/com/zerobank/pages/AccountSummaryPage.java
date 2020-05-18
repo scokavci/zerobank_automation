@@ -35,13 +35,10 @@ public class AccountSummaryPage extends BasePage {
     }
 
     public String getSelectedDefault(){
-        BrowserUtils.waitForPageToLoad(6);
+        BrowserUtils.waitForPageToLoad(10);
         Select select = new Select(wait.until(ExpectedConditions.visibilityOf(accountDropdown)));
         return select.getFirstSelectedOption().getText();
     }
-    public void logOut(){
-        usernameBox.click();
-        logout.click();
-    }
+
 
 }

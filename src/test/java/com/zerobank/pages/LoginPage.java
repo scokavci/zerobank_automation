@@ -5,7 +5,6 @@ import com.zerobank.utilities.ConfigurationReader;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class LoginPage extends BasePage{
 
@@ -21,26 +20,27 @@ public class LoginPage extends BasePage{
     @FindBy(css="[class='alert alert-error']")
     private WebElement error;
 
+    @FindBy(xpath = "//div[contains(text(),\"Login and/or password are wrong\")]")
+    private WebElement errorMessage;
 
-    public void clickSignIn(){
-        BrowserUtils.wait(5);
-        signInBtn.click();
-    }
-    public void login() {
-      user_login.sendKeys(ConfigurationReader.getProperty("username"));
-      user_password.sendKeys(ConfigurationReader.getProperty("password"),Keys.ENTER);
-      BrowserUtils.waitForPageToLoad(10);
-      BrowserUtils.wait(5);
-    }
     public void login(String usernameValue, String passwordValue){
-      user_login.sendKeys(usernameValue);
-      user_password.sendKeys(passwordValue,Keys.ENTER);
-      BrowserUtils.waitForPageToLoad(10);
-      BrowserUtils.wait(5);
+        signInBtn.click();
+        BrowserUtils.waitForPageToLoad(10);
+        user_login.sendKeys(usernameValue);
+        user_password.sendKeys(passwordValue, Keys.ENTER);
+        BrowserUtils.waitForPageToLoad(10);
+    }
+
+    public void login() {
+        signInBtn.click();
+        BrowserUtils.waitForPageToLoad(10);
+        user_login.sendKeys(ConfigurationReader.getProperty("username"));
+        user_password.sendKeys(ConfigurationReader.getProperty("password"), Keys.ENTER);
+        BrowserUtils.waitForPageToLoad(10);
     }
 
     public String getErrorText(){
-       return error.getText();
+       return errorMessage.getText().trim();
     }
 
 

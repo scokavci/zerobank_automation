@@ -15,48 +15,63 @@ public class FindTransactionStepDefinitions {
     public void userAccessFindTransactionsTab() {
         accountActivityPage.clickFindTransTab();
     }
+
     @When("user enters date range from {string} to {string}")
-    public void userEntersDateRangeFromTo(String arg0, String arg1) {
-     accountActivityPage.enterDateRange(arg0,arg1);
+    public void user_enters_date_range_from_to(String string, String string2) {
+        accountActivityPage.enterDateRange(string,string2);
     }
-    @When("clicks search")
-    public void clicks_search() {
-      accountActivityPage.clickSearch();
+    @Then("user should complete process with {string} button")
+    public void user_should_complete_process_with_button(String string) {
+        accountActivityPage.clickSearch();
+    }
+    @Then("results table should only show transaction dates between {string} to {string}")
+    public void results_table_should_only_show_transaction_dates_between_to(String string, String string2) {
+       Assert.assertTrue(  accountActivityPage.isItInTheRange(string,string2, accountActivityPage.getDataFromTable("Date")));
     }
 
-    @Then("results table should only show transaction dates between {string} to {string}")
-    public void resultsTableShouldOnlyShowTransactionDatesBetweenTo(String arg0, String arg1) {
-        Assert.assertEquals(accountActivityPage.getFirstDate(), arg0);
-        Assert.assertEquals(accountActivityPage.getLastDate(), arg1);
+    @Then("the results should be sorted by most recent date")
+    public void the_results_should_be_sorted_by_most_recent_date() {
+     Assert.assertTrue(   accountActivityPage.isItSortedRecentToOld(accountActivityPage.getDataFromTable("Date"))  );
+    }
+
+    @Then("the results table should only not contain transactions dated {string}")
+    public void the_results_table_should_only_not_contain_transactions_dated(String string) {
+       Assert.assertFalse(accountActivityPage.isDateListed(string,accountActivityPage.getDataFromTable("Date")));
     }
 
     @When("user enters description {string}")
     public void user_enters_description(String string) {
-       accountActivityPage.enterDescription(string);
+        accountActivityPage.enterDescription(string);
     }
 
     @Then("results table should only show descriptions containing {string}")
     public void results_table_should_only_show_descriptions_containing(String string) {
-     Assert.assertTrue( accountActivityPage.getFirstTextDesc().contains(string));
-     Assert.assertTrue( accountActivityPage.getlastTextDesc().contains(string));
-    }
-    @But("results table should not show descriptions containing {string}")
-    public void resultsTableShouldNotShowDescriptionsContaining(String arg0) {
-        Assert.assertFalse(accountActivityPage.getFirstTextDesc().contains(arg0));
-        Assert.assertFalse(accountActivityPage.getlastTextDesc().contains(arg0));
+        Assert.assertTrue(accountActivityPage.isDataListed(string, accountActivityPage.getDataFromTable("Description")));
     }
 
-    @Given("click {string} type")
-    public void click_type(String string) {
-     accountActivityPage.selectType(string);
+    @Then("results table should not show descriptions containing {string}")
+    public void results_table_should_not_show_descriptions_containing(String string) {
+        Assert.assertFalse(accountActivityPage.isDataListed(string,accountActivityPage.getDataFromTable("Description")));
     }
 
-    @Then("results table should show at least one result under Deposit")
-    public void results_table_should_show_at_least_one_result_under_Deposit() {
-        Assert.assertTrue( accountActivityPage.verifyOneResultUnderDeposit());
+    @Then("results table should show at least one result under {string}")
+    public void results_table_should_show_at_least_one_result_under(String string) {
+        Assert.assertTrue(accountActivityPage.isDataListed(accountActivityPage.getDataFromTable(string)));
     }
 
+    @When("user selects type {string}")
+    public void user_selects_type(String string) {
+        accountActivityPage.selectFrom("type",string);
+    }
 
-
+    @Then("results table should show no result under {string}")
+    public void results_table_should_show_no_result_under(String string) {
+        Assert.assertTrue(accountActivityPage.isDataListed(accountActivityPage.getDataFromTable(string)));
+    }
 
 }
+
+
+
+
+

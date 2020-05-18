@@ -2,7 +2,6 @@ package com.zerobank.stepdefinitions;
 
 import com.zerobank.pages.AccountSummaryPage;
 import com.zerobank.pages.LoginPage;
-import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
@@ -26,10 +25,6 @@ public class AccountSummaryStepDefinitions {
     @Then("Account drop down should have {string} selected")
     public void account_drop_down_should_have_selected(String string) {
        Assert.assertEquals( accountSummaryPage.getSelectedDefault(),string);
-    }
-    @Then("logout")
-    public void logout() {
-        accountSummaryPage.logOut();
     }
 
 

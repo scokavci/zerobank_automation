@@ -3,28 +3,26 @@ Feature: Statements and Documents details
   Background: user is on login page
     Given user is on the login page
     And user logs in as authorized user
-
+    Given user accesses the Statements & Documents tab
 
   @recent_statements
   Scenario Outline: Recent statements per year
-    Given user accesses the Statements & Documents tab
-    When  user selects the Recent Statements Year <year>
-    Then  <count> statements should be displayed for that year
+    When  user selects the Recent Statements Year "<year>"
+    Then  "<year>" statements "<count>" should be displayed for that year
     Then logout
     Examples:
       | year | count |
       | 2009 | 2     |
       | 2010 | 2     |
       | 2011 | 2     |
-      | 2012 | 2     |
+      | 2012 | 1     |
 
   @download_statements
   Scenario Outline: Download statements
-    Given user accesses the Statements & Documents tab
-    And  user selects the Recent Statements Year <year>
+    And  user selects the Recent Statements Year "<year>"
     When  user clicks on statement "<statement>"
     Then the downloaded file name should contain "<name>"
-    And the "<name>" file type should be pdf
+    And the file type should be pdf
     Examples:
       | year | statement               | name     |
       | 2009 | Statement 31/11/09(57K) | 31-11-09 |

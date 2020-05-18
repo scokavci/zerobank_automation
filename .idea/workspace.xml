@@ -2,8 +2,58 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2edc4413-e9a6-4853-88d6-dd16f6ba5ac9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/configuration.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/zerobank/pages/AccountActivityPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/zerobank/pages/AccountActivityPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/zerobank/pages/AccountSummaryPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/zerobank/pages/AccountSummaryPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/zerobank/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/zerobank/pages/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/zerobank/pages/OnlineStatementsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/zerobank/pages/OnlineStatementsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/zerobank/runners/CukesRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/zerobank/runners/CukesRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/zerobank/stepdefinitions/AccountSummaryStepDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/zerobank/stepdefinitions/AccountSummaryStepDefinitions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/zerobank/stepdefinitions/FindTransactionStepDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/zerobank/stepdefinitions/FindTransactionStepDefinitions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/zerobank/stepdefinitions/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/zerobank/stepdefinitions/Hooks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/zerobank/stepdefinitions/LoginStepDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/zerobank/stepdefinitions/LoginStepDefinition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/zerobank/stepdefinitions/StatementsAndDocumentsStepDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/zerobank/stepdefinitions/StatementsAndDocumentsStepDefinitions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/zerobank/utilities/ConfigurationReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/zerobank/utilities/ConfigurationReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/AccountSummary.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/AccountSummary.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/FindTransactions.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/FindTransactions.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Login.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/PayBills.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/PayBills.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/StatementsAndDocuments.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/StatementsAndDocuments.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber_report.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/default_report/formatter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/default_report/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/default_report/jquery-3.4.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/default_report/report.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/default_report/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/rerun.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zerobank/pages/AccountActivityPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zerobank/pages/AccountSummaryPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zerobank/pages/BasePage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zerobank/pages/LoginPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zerobank/pages/OnlineStatementsPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zerobank/pages/PayBillsPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zerobank/runners/CukesRunner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zerobank/stepdefinitions/AccountActivityStepDefinitions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zerobank/stepdefinitions/AccountSummaryStepDefinitions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zerobank/stepdefinitions/FindTransactionStepDefinitions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zerobank/stepdefinitions/ForeignCurrencyStepDefinitions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zerobank/stepdefinitions/Hooks.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zerobank/stepdefinitions/LoginStepDefinition.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zerobank/stepdefinitions/NewPayeeStepDefinitions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zerobank/stepdefinitions/PayBillsStepDefinitions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zerobank/stepdefinitions/StatementsAndDocumentsStepDefinitions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zerobank/utilities/BrowserUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zerobank/utilities/ConfigurationReader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zerobank/utilities/Driver.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/AccountActivity.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/AccountSummary.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/FindTransactions.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/Login.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/NewPayee.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/PayBills.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/PurchaseForeignCurrency.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/StatementsAndDocuments.feature" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,33 +148,37 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="-1326" y="-34" width="1182" height="544" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1588793335381">
+    <state x="-1326" y="-34" width="1182" height="544" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1589833820358">
       <screen x="-1600" y="-138" width="1600" height="860" />
     </state>
-    <state x="-1326" y="-34" width="1182" height="544" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1366.728/-1600.-138.1600.860@0.0.1366.728" timestamp="1588793335381" />
+    <state x="-1326" y="-34" width="1182" height="544" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1366.728/-1600.-138.1600.860@0.0.1366.728" timestamp="1589833820358" />
     <state x="488" y="73" key="#com.intellij.ide.util.MemberChooser" timestamp="1588487124906">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="488" y="73" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728/-1600.-138.1600.860@0.0.1366.728" timestamp="1588487124906" />
-    <state width="1323" height="268" key="GridCell.Tab.0.bottom" timestamp="1588793701010">
+    <state width="1323" height="231" key="GridCell.Tab.0.bottom" timestamp="1589845088118">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="268" key="GridCell.Tab.0.bottom/0.0.1366.728/-1600.-138.1600.860@0.0.1366.728" timestamp="1588793701010" />
-    <state width="1323" height="268" key="GridCell.Tab.0.center" timestamp="1588793701009">
+    <state width="1323" height="231" key="GridCell.Tab.0.bottom/0.0.1366.728/-1600.-138.1600.860@0.0.1366.728" timestamp="1589845088118" />
+    <state width="1323" height="231" key="GridCell.Tab.0.center" timestamp="1589845088118">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="268" key="GridCell.Tab.0.center/0.0.1366.728/-1600.-138.1600.860@0.0.1366.728" timestamp="1588793701009" />
-    <state width="1323" height="268" key="GridCell.Tab.0.left" timestamp="1588793701009">
+    <state width="1323" height="231" key="GridCell.Tab.0.center/0.0.1366.728/-1600.-138.1600.860@0.0.1366.728" timestamp="1589845088118" />
+    <state width="1323" height="231" key="GridCell.Tab.0.left" timestamp="1589845088118">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="268" key="GridCell.Tab.0.left/0.0.1366.728/-1600.-138.1600.860@0.0.1366.728" timestamp="1588793701009" />
-    <state width="1323" height="268" key="GridCell.Tab.0.right" timestamp="1588793701009">
+    <state width="1323" height="231" key="GridCell.Tab.0.left/0.0.1366.728/-1600.-138.1600.860@0.0.1366.728" timestamp="1589845088118" />
+    <state width="1323" height="231" key="GridCell.Tab.0.right" timestamp="1589845088118">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="268" key="GridCell.Tab.0.right/0.0.1366.728/-1600.-138.1600.860@0.0.1366.728" timestamp="1588793701009" />
-    <state x="391" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1588801611192">
+    <state width="1323" height="231" key="GridCell.Tab.0.right/0.0.1366.728/-1600.-138.1600.860@0.0.1366.728" timestamp="1589845088118" />
+    <state x="350" y="69" key="NewModule_or_Project.wizard" timestamp="1588969611619">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="391" y="191" key="com.intellij.ide.util.TipDialog/0.0.1366.728/-1600.-138.1600.860@0.0.1366.728" timestamp="1588801611192" />
+    <state x="350" y="69" key="NewModule_or_Project.wizard/0.0.1366.728/-1600.-138.1600.860@0.0.1366.728" timestamp="1588969611619" />
+    <state x="391" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1588969318665">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="391" y="191" key="com.intellij.ide.util.TipDialog/0.0.1366.728/-1600.-138.1600.860@0.0.1366.728" timestamp="1588969318665" />
   </component>
 </project>

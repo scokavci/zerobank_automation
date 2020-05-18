@@ -11,9 +11,9 @@ import org.junit.runner.RunWith;
            features="src/test/resources/features",
            dryRun=false,
            strict=false,
-           tags="@type",
-           plugin={
-                   "html:target/default_report",
+           tags="@account_activity_search_transaction_type",
+           plugin={  "pretty",
+                    "html:target/default_report",
                     "json:target/cucumber_report.json",
                     "rerun:target/rerun.txt"
            }

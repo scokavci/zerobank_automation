@@ -11,37 +11,44 @@ import org.junit.Assert;
 
 public class LoginStepDefinition {
 
-   LoginPage loginpage = new LoginPage();
+   LoginPage loginPage = new LoginPage();
 
     @Given("user is on the login page")
     public void user_is_on_the_login_page() {
         Driver.getDriver().get(ConfigurationReader.getProperty("URL"));
+        BrowserUtils.waitForPageToLoad(10);
     }
 
     @When("user logs in as authorized user")
     public void user_logs_in_as_authorized_user() {
-         loginpage.clickSignIn();
-         loginpage.login();
+         loginPage.login();
     }
-    @Then("user should verify that Account summary page is displayed")
-    public void user_should_verify_that_Account_summary_page_is_displayed() {
-        BrowserUtils.waitForPageToLoad(10);
-        Assert.assertEquals("Zero - Account Summary",Driver.getDriver().getTitle());
+    @When("users try to log in with invalid username {string}")
+    public void users_try_to_log_in_with_invalid_username(String string) {
+        loginPage.login(string,ConfigurationReader.getProperty("password"));
     }
-    @When("user tries to login with invalid credentials")
-    public void user_tries_to_login_with_invalid_credentials() {
-        loginpage.clickSignIn();
-        loginpage.login("user","pass");
+    @When("users try to log in with invalid password {string}")
+    public void users_try_to_log_in_with_invalid_password(String string) {
+        loginPage.login(ConfigurationReader.getProperty("username"),string);
     }
 
-    @Then("error message {string} should be displayed")
-    public void error_message_should_be_displayed(String errormessage) {
-        BrowserUtils.waitForPageToLoad(5);
-        Assert.assertEquals(  loginpage.getErrorText(),errormessage  );
+    @When("users try to log in with blank user name")
+    public void users_try_to_log_in_with_blank_user_name() {
+        loginPage.login("",ConfigurationReader.getProperty("password"));
+    }
+    @When("users try to log in with blank password")
+    public void users_try_to_log_in_with_blank_password() {
+        loginPage.login(ConfigurationReader.getProperty("username"),"");
+    }
+    @Then("user should verify that title is {string}")
+    public void user_should_verify_that_title_is(String string) {
+        Assert.assertEquals(string,Driver.getDriver().getTitle());
     }
 
-
-
+    @Then("user should verify that error message is {string}")
+    public void user_should_verify_that_error_message_is(String string) {
+        Assert.assertEquals(string,loginPage.getErrorText());
+    }
 
 
 
