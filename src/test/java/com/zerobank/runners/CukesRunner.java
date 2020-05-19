@@ -11,10 +11,10 @@ import org.junit.runner.RunWith;
            features="src/test/resources/features",
            dryRun=false,
            strict=false,
-           tags="@account_activity_search_transaction_type",
+           //tags="",
            plugin={  "pretty",
                     "html:target/default_report",
-                    "json:target/cucumber_report.json",
+                    "json:target/zerobank_cucumber.json",
                     "rerun:target/rerun.txt"
            }
 )
