@@ -97,6 +97,14 @@
       <option name="presentableId" value="Default" />
       <updated>1588231267364</updated>
     </task>
+    <task id="LOCAL-00001" summary="updates to test CI">
+      <created>1589861006448</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1589861006448</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -112,10 +120,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="488" y="73" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728/-1600.-138.1600.860@0.0.1366.728" timestamp="1588487124906" />
-    <state x="306" y="0" key="CommitChangelistDialog2" timestamp="1589846694954">
+    <state x="306" y="0" key="CommitChangelistDialog2" timestamp="1589861004655">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="306" y="0" key="CommitChangelistDialog2/0.0.1366.728/-1600.-138.1600.860@0.0.1366.728" timestamp="1589846694954" />
+    <state x="306" y="0" key="CommitChangelistDialog2/0.0.1366.728/-1600.-138.1600.860@0.0.1366.728" timestamp="1589861004655" />
     <state width="1323" height="231" key="GridCell.Tab.0.bottom" timestamp="1589846857027">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -136,6 +144,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="350" y="69" key="NewModule_or_Project.wizard/0.0.1366.728/-1600.-138.1600.860@0.0.1366.728" timestamp="1588969611619" />
+    <state x="275" y="100" key="Vcs.Push.Dialog.v2" timestamp="1589861009779">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="100" key="Vcs.Push.Dialog.v2/0.0.1366.728/-1600.-138.1600.860@0.0.1366.728" timestamp="1589861009779" />
     <state x="391" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1588969318665">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

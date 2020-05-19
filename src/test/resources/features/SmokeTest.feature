@@ -1,53 +1,19 @@
 @smoke_test
-Feature: Find Transactions in Account Activity
+Feature: Pay Bills
+  As a user complete a successful pay operation, then verify display message
+  As a user verify display error message after incomplete pay operation
 
   Background: user is on login page
     Given user is on the login page
     And user logs in as authorized user
-    And user logs in Account Activity page
-    Given user access Find Transactions tab
+    Then user verify the title of Pay Bills Page as "Zero - Pay Bills"
 
-  @search_date_range
-  Scenario: Search date range
-    When user enters date range from "2012-09-01" to "2012-09-06"
-    Then user should complete process with "Find" button
-    Then results table should only show transaction dates between "2012-09-01" to "2012-09-06"
-    And the results should be sorted by most recent date
-    Then user enters date range from "2012-09-02" to "2012-09-06"
-    And user should complete process with "Find" button
-    Then results table should only show transaction dates between "2012-09-02" to "2012-09-06"
-    And the results table should only not contain transactions dated "2012-09-01"
+  @successful_payment
+  Scenario:Completes a successful pay
+    When user completes a Successful Pay operation
+    Then user verify "The payment was successfully submitted." message should be displayed
 
-
-  @search_description
-  Scenario: Search description
-    When user enters description "ONLINE"
-    Then user should complete process with "Find" button
-    Then results table should only show descriptions containing "ONLINE"
-    When user enters description "OFFICE"
-    And user should complete process with "Find" button
-    But results table should not show descriptions containing "OFFICE"
-    But results table should not show descriptions containing "ONLINE"
-
-  @account_activity_search_description_case_sensitive
-  Scenario: Search description case insensitive
-    When user enters description "ONLINE"
-    And user should complete process with "Find" button
-    Then results table should only show descriptions containing "ONLINE"
-    When user enters description "online"
-    And user should complete process with "Find" button
-    Then results table should only show descriptions containing "ONLINE"
-
-  @account_activity_search_transaction_type
-  Scenario: Type
-    And user should complete process with "Find" button
-    Then results table should show at least one result under "Deposit"
-    And results table should show at least one result under "Withdrawal"
-    When user selects type "Deposit"
-    Then user should complete process with "Find" button
-    And results table should show at least one result under "Deposit"
-    Then results table should show no result under "Withdrawal"
-    When user selects type "Withdrawal"
-    Then user should complete process with "Find" button
-    And results table should show at least one result under "Withdrawal"
-    Then results table should show no result under "Deposit"
+  @incomplete_payment
+  Scenario: Missing date and amount in payment process
+    When user tries to make payment without entering "amount" or "date"
+    Then user view "Please fill out this field." message should be displayed
